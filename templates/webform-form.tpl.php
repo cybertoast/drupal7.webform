@@ -4,10 +4,13 @@
  * @file
  * Customize the display of a complete webform.
  *
- * This file may be renamed "webform-form-[nid].tpl.php" to target a specific
+ * This file may be renamed "webform-form--[nid].tpl.php" to target a specific
  * webform on your site. Or you can leave it "webform-form.tpl.php" to affect
  * all webforms on your site.
- *
+ * 
+ * You can also add your own custom template suggestions to the theme_hook_suggestions
+ * array as you wish, which would use templates such as "webform-form--mycustompath.tpl.php"
+ *  
  * Available variables:
  * - $form: The complete form array.
  * - $nid: The node ID of the Webform.

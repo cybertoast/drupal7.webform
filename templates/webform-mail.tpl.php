@@ -4,9 +4,12 @@
  * @file
  * Customize the e-mails sent by Webform after successful submission.
  *
- * This file may be renamed "webform-mail-[nid].tpl.php" to target a
+ * This file may be renamed "webform-mail--[nid].tpl.php" to target a
  * specific webform e-mail on your site. Or you can leave it
  * "webform-mail.tpl.php" to affect all webform e-mails on your site.
+ * 
+ * You can also add your own custom template suggestions to the theme_hook_suggestions
+ * array as you wish, which would use templates such as "webform-mail--mycustompath.tpl.php"
  *
  * Available variables:
  * - $node: The node object for this webform.

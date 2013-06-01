@@ -252,7 +252,7 @@ function webform_email_edit_form($form, $form_state, $node, $email = array()) {
     '#default_value' => $email['template'] == 'default' ? 'default' : 'custom',
   );
 
-  $default_template = theme(array('webform_mail_' . $node->nid, 'webform_mail', 'webform_mail_message'), array('node' => $node, 'email' => $email));
+  $default_template = theme(array('webform_mail__' . $node->nid, 'webform_mail', 'webform_mail_message'), array('node' => $node, 'email' => $email));
   $template = $email['template'] == 'default' ? $default_template : $email['template'];
   $form['template']['template'] = array(
     '#type' => 'textarea',
